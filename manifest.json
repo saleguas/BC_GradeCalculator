@@ -7,14 +7,7 @@
           "matches": [
             "*://bconline.broward.edu/d2l/lms/grades/my_grades/*"
           ],
-          "js": ["content.js"]
+          "js": ["jquery-3.4.1.min.js", "content.js"]
         }
-      ],
-    "background":
-    {
-      "scripts":
-      [
-        "jquery-3.4.1.js"
       ]
-    }
   }
