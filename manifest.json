@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "My Cool Extension",
+    "version": "0.1",
+    "content_scripts": [
+        {
+          "matches": [
+            "*://bconline.broward.edu/d2l/lms/grades/my_grades/*"
+          ],
+          "js": ["content.js"]
+        }
+      ]
+  }
