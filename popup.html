@@ -1,19 +1,20 @@
 <html>
 
 <head>
-    <link href="css-circular-prog-bar.css" rel="stylesheet">
-    <script src = "window.js"></script>
+    <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+    <script type="text/javascript" src="loading-bar.js"></script>
 </head>
 
 <body>
-    <div class="progress-circle p10">
-        <span id = "total">0</span>
-        <div class="left-half-clipper">
-          <div class="first50-bar"></div>
-          <div class="value-bar"></div>
-        </div>
-      </div>
-    <h1>Choo Choo!</h1>
+        <div
+            style="width:200px;height:200px",
+            data-stroke="data:ldbar/res,gradient(0,1,#9df,#9fd,#df9,#fd9)",
+            data-preset="circle",
+            class="ldBar label-center",
+            id = "percent"
+        ></div>
+    <h1 id = "points" style = "text-align: center"></h1>
+    <script src = "window.js"></script>
 </body>
 
 </html>
