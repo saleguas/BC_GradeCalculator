@@ -7,11 +7,18 @@
           "matches": [
             "*://bconline.broward.edu/d2l/lms/grades/my_grades/*"
           ],
-          "js": ["jquery-3.4.1.min.js", "content.js"]
+          "js": [
+            "jquery-3.4.1.min.js",
+            "calculate.js"
+          ]
         }
       ],
     "browser_action":{
       "default_popup": "popup.html",
       "default_title": "Click here to see the grade report."
-    }
+    },
+
+    "permissions": [
+      "storage"
+    ]
   }
