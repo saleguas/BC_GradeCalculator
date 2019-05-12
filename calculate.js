@@ -19,7 +19,20 @@ console.log(total)
 console.log(received/total)
 endPercent = parseInt((received/total)*100)
 
+var color = "bg-success";
+if (endPercent > 90)
+    color = "bg-info";
+if (endPercent < 80)
+    color = "bg-warning";
+if (endPercent > 70)
+    color = "bg-danger";
+console.log(color)
 chrome.storage.local.set({percent: String(endPercent)}, function() {
 });
 chrome.storage.local.set({points: received}, function() {
 });
+document.getElementsByTagName("header")[0].innerHTML += "<b>" + `<html>
+<div class="progress">
+  <div class="progress-bar ` + color + `" style="width:` + String(endPercent) + `%">` + String(endPercent) + `%</div>
+</div>
+`
