@@ -1,9 +1,10 @@
 chrome.storage.local.get(['percent'], function(result) {
     var color = "big green";
-    if(result.percent < 80)
-      color = "big dark"
-    if(result.percent < 70)
-      color = "big dark orange"
+    let num = parseInt(result.percent)
+    if(num < 80)
+      color = "big orange"
+    if(num < 60)
+      color = "big"
 
     document.getElementById("percent").className = "c100 p" + result.percent + " " +color;
     document.getElementById("percent2").innerHTML = result.percent + "%"
