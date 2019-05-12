@@ -12,8 +12,14 @@ chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs){
         document.getElementById("percent").className = "c100 p" + result.percent + " " +color;
         document.getElementById("percent2").innerHTML = result.percent + "%"
     });
+    var build = "";
     chrome.storage.local.get(['points'], function(result) {
-        document.getElementById("points").innerHTML = result.points + " Points"
+        build += result.points + "/ "
     });
+    chrome.storage.local.get(['points2'], function(result) {
+        document.getElementById("points").innerHTML = build + result.points2 + " points"
+    });
+    
+    
 }
 })

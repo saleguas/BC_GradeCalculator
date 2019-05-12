@@ -1,0 +1,15 @@
+.progress-bar-green {
+    background-color: rgb(85, 201, 7) !important;
+}
+.progress-bar-darkgreen {
+    background-color: rgb(90, 141, 47) !important;
+}
+.progress-bar-yellow {
+    background-color: rgb(216, 219, 11) !important;
+}
+.progress-bar-red {
+    background-color: rgb(248, 104, 20) !important;
+}
+.progress-bar-darkred {
+    background-color: rgb(226, 58, 15) !important;
+}

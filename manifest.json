@@ -13,6 +13,7 @@
             "calculate.js"
           ],
           "css": [
+            "bootstrapcolors.css",
             "bootstrap.min.css"
           ]
         }
