@@ -58,7 +58,7 @@
   margin: 0 auto;
 }
 .c100.big {
-  font-size: 240px;
+  font-size: 180px;
 }
 .c100.small {
   font-size: 80px;
@@ -845,7 +845,7 @@
   border-color: #c6ff00 !important;
 }
 .c100.dark > span {
-  color: #777777;
+  color: white;
 }
 .c100.dark:after {
   background-color: #666666;

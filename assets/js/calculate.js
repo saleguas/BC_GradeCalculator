@@ -2,6 +2,7 @@ var ak = $("label")
 var received = 0
 var total = 0
 var endPercent = 0
+var cTotal = 0
 for(i = 1; i < ak.length; i++)
 {
     let a = String(ak[i-1].innerText)
@@ -11,6 +12,8 @@ for(i = 1; i < ak.length; i++)
         if (nums[0] != "-") {
             received = received + Number(nums[0])
             total = total + Number(nums[1])
+        } else if (nums[1] != "-") {
+            cTotal = cTotal + Number(nums[1])
         }
     }
 }
@@ -18,13 +21,15 @@ console.log(received)
 console.log(total)
 console.log(received/total)
 endPercent = parseInt((received/total)*100)
+cEndPercent = parseInt((total/(cTotal + total))*100)
 
 chrome.storage.local.set({percent: String(endPercent)}, function() {
 });
 chrome.storage.local.set({points: parseFloat(received.toFixed(4))}, function() {
 });
 chrome.storage.local.set({points2: parseFloat(total.toFixed(4))}, function(){
-
+});
+chrome.storage.local.set({cPercent: String(cEndPercent)}, function() {
 });
 
 document.getElementsByTagName("header")[0].innerHTML += "<b>" + `
