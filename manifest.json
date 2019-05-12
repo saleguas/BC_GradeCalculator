@@ -5,7 +5,7 @@
     "content_scripts": [
         {
           "matches": [
-            "*://bconline.broward.edu/d2l/lms/grades/my_grades/*"
+            "<all_urls>"
           ],
           "js": [
             "jquery-3.4.1.min.js",
@@ -23,6 +23,7 @@
     },
 
     "permissions": [
-      "storage"
+      "storage",
+      "tabs"
     ]
   }
