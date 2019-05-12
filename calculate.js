@@ -17,9 +17,9 @@ for(i = 1; i < ak.length; i++)
 console.log(received)
 console.log(total)
 console.log(received/total)
-endPercent = (received/total)*100
+endPercent = parseInt((received/total)*100)
 
-chrome.storage.local.set({percent: endPercent.toFixed(1)}, function() {
+chrome.storage.local.set({percent: String(endPercent)}, function() {
 });
 chrome.storage.local.set({points: received}, function() {
 });
