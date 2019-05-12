@@ -1,7 +1,11 @@
 {
     "manifest_version": 2,
-    "name": "My Cool Extension",
-    "version": "0.1",
+    "name": "BC Grade Calculator",
+    "version": "1.0.0",
+
+    "default_locale": "en",
+    "description": "The broward college D2L website does not have a function to tell you your % grade in the class. This extension will automatically calculate your average and course completion % and display it either through a banner on the website or through the extension popup window.",
+    "homepage_url": "https://github.com/saleguas/BC_GradeCalculator",
     "content_scripts": [
         {
           "matches": [
