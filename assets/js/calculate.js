@@ -17,6 +17,9 @@ for(i = 1; i < ak.length; i++)
         }
     }
 }
+if (total == 0) {
+    total = 0.0000000000001
+}
 console.log(received)
 console.log(total)
 console.log(received/total)
