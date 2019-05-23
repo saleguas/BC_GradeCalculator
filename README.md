@@ -13,3 +13,5 @@ An extension to automatically calculate the class grade for Broward College D2L.
 
 ## Disclaimer:
 We are not responsible or liable for any damages resulting from the use of our software.
+
+IMPORTANT NOTE: ALL 0s WILL BE COUNTED AS IF THE ASSIGNMENT HAS NOT BEEN COMPLETED.

@@ -9,7 +9,7 @@ for(i = 1; i < ak.length; i++)
     let b = String(ak[i].innerText)
     if (a.includes(" / ") && b.includes("%")){
         let nums = a.split(" / ")
-        if (nums[0] != "-") {
+        if (nums[0] != "-" && nums[0] != "0") {
             received = received + Number(nums[0])
             total = total + Number(nums[1])
         } else if (nums[1] != "-") {
