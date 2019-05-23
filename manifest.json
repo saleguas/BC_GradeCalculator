@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "BC Grade Calculator",
-    "version": "1.0.0",
+    "version": "1.0.1",
 
     "description": "Tells you the % grade and % completion of a class in Broward College's D2L website.",
     "homepage_url": "https://github.com/saleguas/BC_GradeCalculator",
